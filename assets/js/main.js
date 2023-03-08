@@ -1,9 +1,25 @@
-/*
-	Arcana by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+aHomeHolder = document.querySelector("#homeLink")
+document.querySelector("#homeLink a").addEventListener("click", homeCurrent)
+aProductsHolder = document.querySelector("#productsLink")
+document.querySelector("#productsLink a").addEventListener("click", productsCurrent)
+aContactHolder = document.querySelector("#contactsLink")
+document.querySelector("#contactsLink a").addEventListener("click", contactsCurrent)
 
+function homeCurrent(){
+	aHomeHolder.classList.add("current")
+	aProductsHolder.classList.remove("current")
+	aContactHolder.classList.remove("current")
+}
+function productsCurrent(){
+	aHomeHolder.classList.remove("current")
+	aProductsHolder.classList.add("current")
+	aContactHolder.classList.remove("current")
+}
+function contactsCurrent(){
+	aHomeHolder.classList.remove("current")
+	aProductsHolder.classList.remove("current")
+	aContactHolder.classList.add("current")
+}
 (function($) {
 
 	var	$window = $(window),
