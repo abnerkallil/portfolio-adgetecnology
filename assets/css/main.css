@@ -2551,6 +2551,10 @@ input, select, textarea {
 			}
 
 	#nav {
+		position: fixed;
+		top: 0;
+		z-index: 100;
+		width: 100%;
 		cursor: default;
 		background-color: #333;
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
